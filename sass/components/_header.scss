@@ -1,0 +1,87 @@
+.header {
+	background: #000; 
+	overflow: hidden;
+}
+.banner{
+    padding: 100px 60px;
+    &__left{
+        position: relative;
+        img{
+            position: absolute;
+            left: 143px;
+            top: -227px;
+        }
+    }
+    &__right{
+        z-index: 999;
+        text-align: right;
+        .tagline{
+            font-size: 20px;
+            font-family: $abrilFatface;
+            font-weight: 500;
+            line-height: 1.1;
+            color: #fff;
+        }
+        .main_heading{
+            font-family: $abrilFatface;
+            font-size: 102px;
+            font-weight: 500;
+            line-height: 1.1;
+            color: #fff;
+            text-transform: uppercase;
+            z-index: 999;
+            position: relative;
+        }
+        .sub_heading{
+            font-family: $abrilFatface;
+            font-size: 85px;
+            font-weight: 500;
+            line-height: 1.1;
+            color: #fff;
+            text-transform: capitalize;
+            z-index: 999;
+            position: relative;
+        }
+        .button{
+            margin-top: 30px;
+            &__explor{
+                color: #D7C6B3;
+                border: 1px solid #D7C6B3;
+                width: 120px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: $openSans;
+                padding: 7px 10px;
+                background: transparent;
+                transition: all .5s;
+                display: inline-block;
+                text-align: center;
+                &:hover{
+                    color: #000;
+                    border: 1px solid transparent;
+                    background: #D7C6B3;
+                }
+
+            }
+            &__hire{
+                color: #000;
+                border: 1px solid #D7C6B3;
+                width: 120px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: $openSans;
+                padding: 7px 10px;
+                background: #D7C6B3;
+                transition: all .5s;
+                display: inline-block;
+                text-align: center;
+                margin-left: 20px;
+                &:hover{
+                    color: #D7C6B3;
+                    border: 1px solid #D7C6B3;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
